@@ -35,7 +35,7 @@ func wshandler(w http.ResponseWriter, r *http.Request, board *libaduk.AbstractBo
 		move.Color = 1
 		board.PlayMove(move)
 
-		fmt.Printf("%v", board.GetHash())
+		fmt.Printf("%v", board.ToString())
 		conn.WriteMessage(t, msg)
 	}
 }
@@ -66,6 +66,6 @@ func main() {
 		wshandler(c.Writer, c.Request, board)
 	})
 
-	r.Run("localhost:12312")
+	r.Run(":8080")
 
 }
