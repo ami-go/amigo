@@ -52,10 +52,10 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println(board.ToString())
+	//fmt.Println(board.ToString())
 
 	r := gin.Default()
-	r.Static("wgo", "wgo")
+	r.Static("static", "static")
 	r.LoadHTMLGlob("templates/*")
 
 	r.GET("/", func(c *gin.Context) {
