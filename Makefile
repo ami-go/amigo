@@ -9,4 +9,10 @@ test:
 deploy:
 	gcloud app deploy
 
-.PHONY: test deploy
+gae-logs:
+	gcloud app logs tail -s default
+
+gae-browse:
+	gcloud app browse
+
+.PHONY: test deploy gae-logs gae-browse
