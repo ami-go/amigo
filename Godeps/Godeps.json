@@ -1,11 +1,11 @@
 {
-	"ImportPath": "amigo",
+	"ImportPath": "github.com/ami-go/amigo",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
 	"Deps": [
 		{
-			"ImportPath": "github.com/beldur/libaduk",
-			"Rev": "897a45b39035d353aedff698f86cd509e94f03e4"
+			"ImportPath": "github.com/ami-go/baduk-engine",
+			"Rev": "20953a93e01f3afb9655408424a729db4177b9ac"
 		},
 		{
 			"ImportPath": "github.com/gin-gonic/gin",
