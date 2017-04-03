@@ -6,4 +6,7 @@ test:
 	go vet $(PACKAGES)
 	go test $(PACKAGES)
 
-.PHONY: test
+deploy:
+	gcloud app deploy
+
+.PHONY: test deploy
