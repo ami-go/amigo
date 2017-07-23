@@ -1,6 +1,6 @@
 PACKAGES=$(shell go list ./... | grep -v amigo/vendor)
 
-all:
+all: build
 
 .PHONY: test
 test:
