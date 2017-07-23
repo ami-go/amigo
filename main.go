@@ -48,12 +48,6 @@ func main() {
 		panic(err)
 	}
 
-	if err = board.Play(4, 4, libaduk.BLACK); err != nil {
-		panic(err)
-	}
-
-	//fmt.Println(board.ToString())
-
 	r := gin.Default()
 	r.Static("static", "static")
 	r.LoadHTMLGlob("templates/*")
